@@ -1,0 +1,96 @@
+/*=============================================
+OBJETO CON LAS PROPIEDADES DE LA cuerpo
+=============================================*/
+
+var p = {
+
+	teclas: document.querySelectorAll("#cuerpo ul li"),
+	accion: null,
+	digito: null,
+	operaciones: document.querySelector("#operaciones"),
+	cantidadSignos: 0
+
+}
+
+
+/*=============================================
+OBJETO CON LOS MÉTODOS DE LA cuerpo
+=============================================*/
+
+var m = {
+
+	inicio: function() {
+
+		for (var i = 0; i < p.teclas.length; i++) {
+
+			p.teclas[i].addEventListener("click", m.oprimirTecla)
+
+		}
+	},
+
+	oprimirTecla: function(tecla) {
+
+		p.accion = tecla.target.getAttribute("class");
+		p.digito = tecla.target.innerHTML;
+
+		m.cuerpo(p.accion, p.digito);
+
+	},
+
+	cuerpo: function(accion, digito) {
+
+		switch (accion) {
+
+			case "numero":
+
+				p.cantidadSignos = 0;
+
+				if (p.operaciones.innerHTML == 0) {
+					p.operaciones.innerHTML = digito;
+				} else {
+					p.operaciones.innerHTML += digito;
+				}
+
+				break;
+
+			case "signo":
+
+				p.cantidadSignos++
+
+					if (p.cantidadSignos == 1) {
+
+						if (p.operaciones.innerHTML == 0) {
+							p.operaciones.innerHTML = 0;
+						} else {
+							p.operaciones.innerHTML += digito;
+						}
+
+					}
+
+				break;
+
+			case "decimal":
+
+				console.log("decimal");
+
+				break;
+
+			case "igual":
+
+				console.log("igual");
+
+				break;
+
+		}
+
+	},
+
+	borrarcuerpo: function() {
+
+		p.operaciones.innerHTML = 0;
+
+	}
+
+}
+
+m.inicio();
