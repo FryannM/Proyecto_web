@@ -1,10 +1,10 @@
 /*=============================================
-OBJETO CON LAS PROPIEDADES DE LA cuerpo
+OBJETO CON LAS PROPIEDADES DE LA CALCULADORA
 =============================================*/
 
 var p = {
 
-	teclas: document.querySelectorAll("#cuerpo ul li"),
+	teclas: document.querySelectorAll("#calculadora ul li"),
 	accion: null,
 	digito: null,
 	operaciones: document.querySelector("#operaciones"),
@@ -16,7 +16,7 @@ var p = {
 
 
 /*=============================================
-OBJETO CON LOS MÉTODOS DE LA cuerpo
+OBJETO CON LOS MÉTODOS DE LA CALCULADORA
 =============================================*/
 
 var m = {
@@ -136,7 +136,7 @@ var m = {
 		else if (tecla.keyCode == 8) {
 
 			p.accion = "";
-			m.borrarcuerpo();
+			m.borrarCalculadora();
 		}
 
 		else{
@@ -146,7 +146,7 @@ var m = {
 		}
 
 
-		m.cuerpo(p.accion, p.digito);
+		m.calculadora(p.accion, p.digito);
 
 	},
 
@@ -155,11 +155,11 @@ var m = {
 		p.accion = tecla.target.getAttribute("class");
 		p.digito = tecla.target.innerHTML;
 
-		m.cuerpo(p.accion, p.digito);
+		m.calculadora(p.accion, p.digito);
 
 	},
 
-	cuerpo: function(accion, digito) {
+	calculadora: function(accion, digito) {
 
 		switch (accion) {
 
@@ -246,7 +246,7 @@ var m = {
 
 	},
 
-	borrarcuerpo: function() {
+	borrarCalculadora: function() {
 
 		p.resultado = false;
 		p.operaciones.innerHTML = 0;

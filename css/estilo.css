@@ -9,11 +9,11 @@
 center{
 	position:relative;
 	margin:20px auto;
-	width:500px;
+	width:600px;
 	height:60px;
 	text-align:center;
 	line-height:60px;
-	background:gray;
+	background:green;
 	color:white;
 	font-weight:bold;
 	border:5px solid #ccc;
@@ -33,11 +33,10 @@ center{
 #operaciones{
 	position:relative;
 	margin:20px auto;
+	height: 20px;
 	width:70%;
-	background:white;
-	border:1px solid #ccc;
+	background:#ddd;
 	border-radius:10px;
-	box-shadow:5px 5px 10px #999;
 	padding:10%;
 	text-align:right;
 	font-size:25px;
@@ -56,7 +55,7 @@ center{
 	margin:8px;
 	background:white;
 	border:1px solid #aaa;
-	border-radius:5px;
+	border-radius:80px;
 	box-shadow:5px 5px 10px #999;
 	font-weight:bold;
 	cursor:pointer;	
@@ -71,19 +70,35 @@ center{
 	background:magenta;
 	color:white;
 }
+#Llamar {
 
+	position:absolute;
+	bottom:10px;
+	padding: 5px 15px;
+	width:80px;
+	height: 30px;
+	background:#22EC7B;
+	/*border:1px solid #aaa;*/
+	border-radius:90px;
+	left: 80px;
+	/*border:5px solid #bbb;*/
+	color:white;
+	cursor:pointer;
+	text-align: center;
+	
+
+}
 #borrar{
 	position:absolute;
 	bottom:10px;
 	padding: 5px 15px;
-	width:100px;
-	background:#71EAA4;
-	border-radius:6px;
-	left: 80px;
+	width:10px;
+	background:gray;
+	border-radius:10px;
+	left: 200px;
 	border:5px solid #bbb;
 	color:white;
 	cursor:pointer;
-	text-align: center;
 }
 
 #borrar:hover{
