@@ -1,17 +1,25 @@
-/*=============================================
-OBJETO CON LAS PROPIEDADES DE LA CALCULADORA
-=============================================*/
+
 
 var p = {
 
 	teclas: document.querySelectorAll("#calculadora ul li"),
-	accion: null,
-	digito: null,
+	
 	operaciones: document.querySelector("#operaciones"),
-	cantidadSignos: 0,
-	cantidadDecimal: false,
-	resultado: false
 
+}
+
+
+
+
+/*=============================================
+Alert LLAMADA
+=============================================*/
+
+function Hacerllamada()
+{
+	  alert("Llamando a ... " + document.getElementById("operaciones").innerHTML ) ;
+
+	  // document.getElementById("demo").innerHTML = "Paragraph changed!";
 }
 
 
@@ -97,31 +105,7 @@ var m = {
 			p.accion = "numero";
 			p.digito = 9;
 		}
-
-		else if (tecla.keyCode == 187 || tecla.keyCode == 107) {
-
-			p.accion = "signo";
-			p.digito = "+";
-		}
-
-		else if (tecla.keyCode == 189 || tecla.keyCode == 109) {
-
-			p.accion = "signo";
-			p.digito = "-";
-		}
-
-		else if (tecla.keyCode == 88 || tecla.keyCode == 106) {
-
-			p.accion = "signo";
-			p.digito = "*";
-		}
-
-		else if (tecla.keyCode == 111) {
-
-			p.accion = "signo";
-			p.digito = "/";
-		}
-
+	
 		else if (tecla.keyCode == 190 || tecla.keyCode == 110) {
 
 			p.accion = "decimal";
@@ -133,11 +117,7 @@ var m = {
 			p.accion = "igual";
 		}
 
-		else if (tecla.keyCode == 8) {
-
-			p.accion = "";
-			m.borrarCalculadora();
-		}
+			
 
 		else{
 			p.accion = "";
@@ -188,29 +168,7 @@ var m = {
 
 				break;
 
-			case "signo":
-
-				p.cantidadSignos++
-
-					if (p.cantidadSignos == 1) {
-
-						if (p.operaciones.innerHTML == "0") {
-
-							p.operaciones.innerHTML = 0;
-
-						} else {
-
-							p.operaciones.innerHTML += digito;
-
-							p.cantidadDecimal = false;
-
-							p.resultado = false;
-
-						}
-
-					}
-
-				break;
+			
 
 			case "decimal":
 
