@@ -71,21 +71,22 @@ center{
 	color:white;
 }
 #Llamar {
-
 	position:absolute;
-	bottom:10px;
-	padding: 5px 15px;
-	width:80px;
-	height: 30px;
-	background:#22EC7B;
-	/*border:1px solid #aaa;*/
-	border-radius:90px;
-	left: 80px;
-	/*border:5px solid #bbb;*/
-	color:white;
-	cursor:pointer;
-	text-align: center;
+  	  border: 5px solid green;
+    border-radius: 50px 50px;
+    bottom: 20px;
+    left: 90px;
+    padding: 5px 25px;
+    background: green;
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
 	
+
+}
+#llamar :hover{
+	background: gray;
+
 
 }
 #borrar{
@@ -102,12 +103,39 @@ center{
 }
 
 #borrar:hover{
-	background:purple;
+	background:#D0E9DB;
 }
 	
 	
 #borrar:active{
 	background:cyan;
+}
+
+
+#Titulo {
+	 
+	 /*vertical-align: center;*/
+	 text-align: center;
+	 text-transform: lowercase;
+
+}
+#iconos {
+	
+    float:middle; 
+    margin-left:65px;
+  
+
+
+
+}
+#Altice {
+	float: left;
+	margin-left: 16px;
+}
+#Hora{
+	float: right;
+	margin-right: 135px;
+
 }
 
 

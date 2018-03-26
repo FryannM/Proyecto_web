@@ -13,9 +13,6 @@ var p = {
 }
 
 
-/*=============================================
-OBJETO CON LOS MÉTODOS DE LA CALCULADORA
-=============================================*/
 
 var m = {
 
@@ -37,49 +34,7 @@ var m = {
 
 	},
 
-	calculadora: function(accion, digito) {
-
-		switch (accion) {
-
-			case "numero":
-
-				p.cantidadSignos = 0;
-
-				if (p.operaciones.innerHTML == 0) {
-					p.operaciones.innerHTML = digito;
-				} else {
-					p.operaciones.innerHTML += digito;
-				}
-
-				break;
-
-			case "signo":
-
-				p.cantidadSignos++
-
-					if (p.cantidadSignos == 1) {
-
-						if (p.operaciones.innerHTML == 0) {
-							p.operaciones.innerHTML = 0;
-						} else {
-							p.operaciones.innerHTML += digito;
-						}
-
-					}
-
-				break;
-
-			case "decimal":
-
-				console.log("decimal");
-
-				break;
-
-			case "igual":
-
-				console.log("igual");
-
-				break;
+	// 
 
 		}
 
