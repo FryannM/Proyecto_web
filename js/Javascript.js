@@ -2,9 +2,9 @@
 
 var p = {
 
-	teclas: document.querySelectorAll("#calculadora ul li"),
+	teclas: document.querySelectorAll("#Tecladoclss ul li"),
 	
-	operaciones: document.querySelector("#operaciones"),
+	OperacionLlamar: document.querySelector("#OperacionLlamar"),
 
 }
 
@@ -17,7 +17,7 @@ var p = {
 
 function Hacerllamada()
 {
-	  alert("Llamando a ... " + document.getElementById("operaciones").innerHTML ) ;
+	  alert("Llamando a ... " + document.getElementById("OperacionLlamar").innerHTML ) ;
 
 	
 }
@@ -43,11 +43,11 @@ var m = {
 		p.accion = tecla.target.getAttribute("class");
 		 p.digito = tecla.target.innerHTML;
 
-		 m.calculadora(p.accion, p.digito);
+		 m.Tecladoclss(p.accion, p.digito);
 
 	},
 
-	calculadora: function(accion, digito) {
+	Tecladoclss: function(accion, digito) {
 
 		switch (accion) {
 
@@ -55,21 +55,21 @@ var m = {
 
 				
 
-				if (p.operaciones.innerHTML == "0") {
+				if (p.OperacionLlamar.innerHTML == "0") {
 
-					p.operaciones.innerHTML = digito;
+					p.OperacionLlamar.innerHTML = digito;
 
 				} else {
 
 					if (p.resultado) {
 
 						
-						p.operaciones.innerHTML = digito;
+						p.OperacionLlamar.innerHTML = digito;
 
 
 					} else {
 
-						p.operaciones.innerHTML += digito;
+						p.OperacionLlamar.innerHTML += digito;
 					}
 
 				}
@@ -82,7 +82,7 @@ var m = {
 	},
 
 	Borrar: function() {
-			p.operaciones.innerHTML = 0;
+			p.OperacionLlamar.innerHTML = 0;
 	}
 
 }

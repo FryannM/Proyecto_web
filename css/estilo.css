@@ -20,7 +20,7 @@ center{
 	border-radius:20px;	
 }
 
-#calculadora{	
+#Tecladoclss{	
 	position:relative;
 	margin:20px auto;
 	width:300px;
@@ -30,7 +30,7 @@ center{
 	background:#ddd;	
 }
 
-#operaciones{
+#OperacionLlamar{
 	position:relative;
 	margin:20px auto;
 	height: 20px;
@@ -43,11 +43,11 @@ center{
 	overflow:hidden;
 }
 
-#calculadora ul {
+#Tecladoclss ul {
 	margin-left:5px;
 }
 
-#calculadora ul li{
+#Tecladoclss ul li{
 	float:left;
 	padding:32px;
 	width:15px;
@@ -61,12 +61,12 @@ center{
 	cursor:pointer;	
 }
 
-#calculadora ul li:hover{
+#Tecladoclss ul li:hover{
 	background:gray;
 	color:white;
 }
 
-#calculadora ul li:active{
+#Tecladocls ul li:active{
 	background:magenta;
 	color:white;
 }
