@@ -119,7 +119,7 @@ center{
 
 #Titulo {
 	 
-	 /*vertical-align: center;*/
+
 	 text-align: center;
 	 text-transform: lowercase;
 
@@ -151,3 +151,16 @@ center{
 }
 
 
+/*Problema 4*/
+
+
+#Layer5{
+
+
+	position:absolute;
+	 width:15px; 
+	 height:27px; 
+	 z-index:2; 
+	 left: 119px;
+	  top: 162px;
+}
