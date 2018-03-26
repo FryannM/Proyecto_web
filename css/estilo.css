@@ -95,11 +95,16 @@ center{
 	padding: 5px 15px;
 	width:10px;
 	background:gray;
-	border-radius:10px;
+	 border: 10px solid red;
 	left: 200px;
 	border:5px solid #bbb;
 	color:white;
 	cursor:pointer;
+	border-radius: 50px 20px;
+	margin-bottom: 10px;
+
+	 /*border: 2px solid red;*/
+  
 }
 
 #borrar:hover{
@@ -122,7 +127,7 @@ center{
 #iconos {
 	
     float:middle; 
-    margin-left:65px;
+    margin-left:74px;
   
 
 
@@ -134,7 +139,14 @@ center{
 }
 #Hora{
 	float: right;
-	margin-right: 135px;
+	margin-right: 95px;
+
+}
+#bateria{
+	float: right;
+	margin-right: 10px;
+
+	
 
 }
 

@@ -119,11 +119,7 @@ var m = {
 
 			
 
-		else{
-			p.accion = "";
-			p.digito = "";
-
-		}
+	
 
 
 		m.calculadora(p.accion, p.digito);
