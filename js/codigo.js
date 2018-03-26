@@ -12,20 +12,18 @@ var p = {
 
 
 /*=============================================
-Alert LLAMADA
+         FUNCION DE LA LLAMADA
 =============================================*/
 
 function Hacerllamada()
 {
 	  alert("Llamando a ... " + document.getElementById("operaciones").innerHTML ) ;
 
-	  // document.getElementById("demo").innerHTML = "Paragraph changed!";
+	
 }
 
 
-/*=============================================
-OBJETO CON LOS MÉTODOS DE LA CALCULADORA
-=============================================*/
+
 
 var m = {
 
@@ -38,100 +36,14 @@ var m = {
 		}
 	},
 
-	teclado: function() {
-
-		document.addEventListener("keydown", m.oprimir);
-
-	},
-
-	oprimir: function(tecla) {
-
-		if (tecla.keyCode == 48 || tecla.keyCode == 96) {
-
-			p.accion = "numero";
-			p.digito = 0;
-		}
-
-		else if (tecla.keyCode == 49 || tecla.keyCode == 97) {
-
-			p.accion = "numero";
-			p.digito = 1;
-		}
-
-		else if (tecla.keyCode == 50 || tecla.keyCode == 98) {
-
-			p.accion = "numero";
-			p.digito = 2;
-		}
-
-		else if (tecla.keyCode == 51 || tecla.keyCode == 99) {
-
-			p.accion = "numero";
-			p.digito = 3;
-		}
-
-		else if (tecla.keyCode == 52 || tecla.keyCode == 100) {
-
-			p.accion = "numero";
-			p.digito = 4;
-		}
-
-		else if (tecla.keyCode == 53 || tecla.keyCode == 101) {
-
-			p.accion = "numero";
-			p.digito = 5;
-		}
-
-		else if (tecla.keyCode == 54 || tecla.keyCode == 102) {
-
-			p.accion = "numero";
-			p.digito = 6;
-		}
-
-		else if (tecla.keyCode == 55 || tecla.keyCode == 103) {
-
-			p.accion = "numero";
-			p.digito = 7;
-		}
-
-		else if (tecla.keyCode == 56 || tecla.keyCode == 104) {
-
-			p.accion = "numero";
-			p.digito = 8;
-		}
-
-		else if (tecla.keyCode == 57 || tecla.keyCode == 105) {
-
-			p.accion = "numero";
-			p.digito = 9;
-		}
 	
-		else if (tecla.keyCode == 190 || tecla.keyCode == 110) {
-
-			p.accion = "decimal";
-			p.digito = ".";
-		}
-
-		else if (tecla.keyCode == 13) {
-
-			p.accion = "igual";
-		}
-
-			
-
-	
-
-
-		m.calculadora(p.accion, p.digito);
-
-	},
 
 	oprimirTecla: function(tecla) {
 
 		p.accion = tecla.target.getAttribute("class");
-		p.digito = tecla.target.innerHTML;
+		 p.digito = tecla.target.innerHTML;
 
-		m.calculadora(p.accion, p.digito);
+		 m.calculadora(p.accion, p.digito);
 
 	},
 
@@ -141,7 +53,7 @@ var m = {
 
 			case "numero":
 
-				p.cantidadSignos = 0;
+				
 
 				if (p.operaciones.innerHTML == "0") {
 
@@ -151,7 +63,7 @@ var m = {
 
 					if (p.resultado) {
 
-						p.resultado = false;
+						
 						p.operaciones.innerHTML = digito;
 
 
@@ -164,47 +76,13 @@ var m = {
 
 				break;
 
-			
-
-			case "decimal":
-
-				if (!p.cantidadDecimal && p.cantidadSignos!=1) {
-
-					p.operaciones.innerHTML += digito;
-
-					p.cantidadDecimal = true;
-					console.log("p.cantidadDecimal", p.cantidadDecimal);
-
-					p.resultado = false;
-
-				}
-
-				break;
-
-			case "igual":
-
-				p.operaciones.innerHTML = eval(p.operaciones.innerHTML);
-
-				var expresion = /./g;
-
-				if(!expresion.test(p.operaciones.innerHTML)){
-
-					p.cantidadDecimal = true;
-				}
-
-				p.resultado = true;
-
-				break;
 
 		}
 
 	},
 
-	borrarCalculadora: function() {
-
-		p.resultado = false;
-		p.operaciones.innerHTML = 0;
-
+	Borrar: function() {
+			p.operaciones.innerHTML = 0;
 	}
 
 }
