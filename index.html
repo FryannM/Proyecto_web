@@ -1,51 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title> SmartPhone</title>
+	<title>Programacion 3</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	 <link rel="icon" href="img/icon.ico">
 
-	<link rel="stylesheet" href="css/estilo.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+	<style>
+		body {
+			/*padding-top: 56px;*/
+			/*padding-bottom: 56px;*/
+		}
+	</style>
 </head>
 <body>
-<center><h1>Ejercicio 7</h1></center>
+	<!-- .navbar-expand-lg	Sirve para indicar en que punto aparecera el toggler -->
+	<!-- .navbar-light 		Indicamos que usaremos un fondo claro -->
+	<!-- .navbar-dark 		Indicamos que usaremos un fondo oscuro -->
+	<!-- .bg-light 			Establecemos un fondo light para el navbar -->
+	<!-- Tambien podemos darle nuestro propio color de fondo con CSS -->
 
-<div id="Tecladoclss">
-<div id="Titulo" class="Titulo">	 
-<i  class="fa fa-wifi" id="iconos"></i>
-<h6 id="Altice">Altice</h6>
-<i  class="fa fa-battery" id="bateria"></i>
-<h6 id="Hora">5:52pm</h6>
- </div>
-
-	<div id="OperacionLlamar">0</div>
-	<ul>
-		<li class="numero">1</li>
-		<li class="numero">2</li>
-		<li class="numero">3</li>
-		<li class="numero">4</li>
-
-		<li class="numero">5</li>
-		<li class="numero">6</li>
-		<li class="numero">7</li>
-			
-		<li class="numero">8</li>
-		<li class="numero">9</li>
-		<li class="signo">*</li>
-		<li class="numero">0</li>
-		<li class="signo">#</li>
-
-		
-	</ul>
-
-	<div id="borrar" onclick="m.Borrar()">X</div>
-	<div id="Llamar" onclick="Hacerllamada()">Call</div>
-
-</div>
-
-<script src="js/javascript.js"></script>
+	<!-- .fixed-top 		Nos permite fijar el menu en la parte superior -->
+	<!-- .fixed-bottom 		Nos permite fijar el menu en la parte inferior -->
 	
+
+
+<nav class="navbar navbar-dark bg-dark">
+		<!-- .container nos permite centrar el contenido de nuestro menu, esta clase es opcional y podemos encerrar el menu <nav> o incluir el contenedor dentro del <nav> -->
+		<div class="container">
+			<!-- Nos sirve para agregar un logotipo al menu -->
+			<a href="#" class="navbar-brand">Menu</a>
+			
+			<!-- Nos permite usar el componente collapse para dispositivos moviles -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu de Navegacion">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a href="#" class="nav-link">Inicio <span class="sr-only">(Actual)</span></a>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle" id="menu-categorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Ejercicios
+						</a>
+						<div class="dropdown-menu" aria-labelledby="menu-categorias">
+							<a href="#" class="dropdown-item">Ejercicio 2</a>
+							<a href="#" class="dropdown-item">Ejercicio 3</a>
+							<a href="4.hmtl" class="dropdown-item">Ejercicio 4</a>
+							<a href="#" class="dropdown-item">Ejercicio 5</a>
+							<a href="#" class="dropdown-item">Ejercicio 6</a>
+							<a href="wait.html" class="dropdown-item">Ejercicio 7</a>
+							
+						</div>
+					</li>
+					<!-- <li class="nav-item">
+						<a href="#" class="nav-link disabled">Proximamente</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Contacto</a>
+					</li> -->
+				</ul>
+			
+				<form action="" class="form-inline my-2 my-lg-0">
+					<input type="text" class="form-control mr-sm-2" placeholder="Buscar" arial-label="Buscar">
+					<button class="btn btn-light my-s my-sm-0" type="submit">Buscar</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row mt-3">
+			<div class="col">
+				<div class="jumbotron">
+					<h3>Universidad Autonoma de Santo Domingo</h3>
+					<p>Universidad Autónoma de Santo Domingo de la universidad Sigla UASD Lema	Primada de América
+						Tipo	Pública Fundación	31 de diciembre de 1866 (151 años)Fundador/es	José Gabriel García y Emiliano Tejera
+						Localización Dirección	Av. Alma Mater Ciudad Universitaria, Santo Domingo, República Dominicana
+						Otras sedes	Santo Domingo, Barahona, Bonao, Duvergé, Hato Mayor, Higuey, La Vega, La Romana, Santa Cruz de Mao, Nagua, Neiba, Puerto Plata, San Francisco de Macorís, San Juan de la Maguana</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" style="margin-top: 1000px;">
+			<div class="col">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
