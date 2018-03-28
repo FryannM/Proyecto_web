@@ -181,3 +181,8 @@ center{
 	 left: 119px;
 	  top: 162px;
 }
+
+.main {
+	background: url('img/bg-textura.png');
+	background-repeat: repeat;
+}
