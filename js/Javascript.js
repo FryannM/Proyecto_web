@@ -80,3 +80,29 @@ m.inicio();
 
 
 
+function transformar(){
+var num1,denom1,entero1,Resultado;
+entero1=entero.value;
+num1=parseInt (numerador.value);
+denom1= parseInt(denominador.value);
+if (denom1>0){
+resultado=(entero1*denom1)+ parseInt(num1);
+numeradore.value=resultado;
+denominadore.value=denom1;
+alert("La Fraccion se ha Transformado a Mixto ");
+}
+else{
+alert("El denominador debe ser distino de cero (0)... ");
+}
+}
+
+
+function limpiar(){
+entero.value="";
+numerador.value="";
+denominador.value="";
+numeradore.value="";
+denominadore.value="";
+alert("Se Limpiara la Pantalla");
+}
+
