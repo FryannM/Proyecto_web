@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Programacion 3</title>
+	<title>Proyecto web</title>
 	<meta charset="UTF-8">
 	
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -26,22 +26,19 @@
 	
 
 
+
 <nav class="navbar navbar-expand-lg navbar-dark	 bg-dark">
-  <a class="navbar-brand" href="#">Menu</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-
-  </button>
-
+	
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="file:///E:/Programacion/Programacion3/Ejercicios/index.html">Inicio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Video</a>
+      	
+        <a class="nav-link  active	" href="https://www.youtube.com/embed/y1Rx-Bbht5E">Video</a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown active	">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Exercices
         </a>
@@ -65,14 +62,19 @@
          <a class="dropdown-item" href="8.html">Exercises 8</a>
          		
       </li>
+
+       <li class="nav-item">
+      	
+        <a class="nav-link  active	"  href="#">Acerca de</a>
+      </li>
      
     </ul>
 
-
-
     <form class="form-inline my-2 my-lg-0">
     	<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-info my-2 my-sm-0"   type="submit"  <span class="glyphicon glyphicon-shopping-cart"></span>Search</button>
+      <button class="btn btn-outline-info my-2 my-sm-0"   type="submit "  >Search
+      	<i  class="fa fa-search	" id="iconos_Me"></i>
+      </button>
     </form>
   </div>
 </nav>
@@ -83,8 +85,28 @@
 				<div class="jumbotron mt-3">
 			
 					<h2>Universidad Autónoma de Santo Domingo <i  class="fa fa-university" id="iconos_Universidad"></i></h2>
-					<p>Universidad Autónoma de Santo Domingo de la universidad Sigla UASD Lema	Primada de AméricaTipo	Pública Fundación	31 de diciembre de 1866 (151 años)Fundador/es	José Gabriel García y Emiliano Tejera
-					Localización Dirección	Av. Alma Mater Ciudad Universitaria, Santo Domingo, República Dominicana Otras sedes	Santo Domingo, Barahona, Bonao, Duvergé, Hato Mayor, Higuey, La Vega, La Romana, Santa Cruz de Mao, Nagua, Neiba, Puerto Plata, San Francisco de Macorís, San Juan de la Maguana</p>
+					<p>La Universidad de Santo Domingo fue creada mediante la Bula In Apostolatus Culmine, expedida el 28 de octubre de 1538 por el Papa Paulo III, la cual elevó a esa categoría el Estudio General que los dominicos regenteaban desde el 1518, en Santo Domingo, sede virreinal de la colonización y el más viejo establecimiento colonial del Nuevo Mundo.</p>
+					<p>	La Universidad de Alcalá de Henares fue su modelo y como tal fue porta-estandarte de las ideas renacentistas que surgían del mundo medieval, del que emergía la España de los días de la conquista.</p>
+
+						<div class="panel panel-default">
+						<div class="panel-heading" id="heading2">
+							<p class="panel-title">
+								<a href="#mas" data-toggle="collapse" data-parent="#mas">
+									más
+								</a>
+							</p>
+						</div>
+						</div>
+					<div id="mas" class="panel-collapse collapse" arial-labelledby="heading2">
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+						</div>				
 
 							<button class="btn btn-danger " data-toggle="modal" data-target="#fm-mapa">Ver Mapa <i class="fa fa-map-marker" id="iconos_mapa"></i></button>
 				<div class="modal fade" id="fm-mapa" tabindex="-1" role="dialog" aria-labelledby="fm-modal" aria-hidden="true">
