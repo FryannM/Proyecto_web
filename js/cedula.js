@@ -14,7 +14,7 @@ function validar(){
 
 		else{
 
-			alert("Cantidad de numero es insuficiente " + cedula2.length); // de lo contrario lanza esta alerta
+			alert("Cantidad de numero no es la adecuada " + cedula2.length); // de lo contrario lanza esta alerta
 		
 		}
 
